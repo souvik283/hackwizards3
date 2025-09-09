@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "popins", "sans-serif";
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5),
+            rgba(4, 9, 30, 0.7)), url(/images/back1.png);
+}
+
+#signup {
+    position: relative;
+    height: 550px;
+    width: 56vw;
+    background: white;
+    border-radius: 30px;
+    /* border: 1px solid black;
+    border-color: black; */
+    box-shadow: 0px, 2px, 10px, rgb(0, 0, 0);
+}
+
+#signup .login {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+}
+
+#signup .login form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#signup .login h2 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+#signup .login input,
+#state {
+    width: 350px;
+    margin: 10px 2px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 0.55rem;
+    height: 34px;
+
+}
+
+#signup .login input::placeholder,
+#state option,
+#state {
+    color: #464646;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#signup .login span i {
+    position: absolute;
+    right: 47px;
+    margin-top: 27px;
+    transform: translateY(-50%);
+}
+
+#login_form h4 {
+    color: #f77d4d;
+    margin: 18px 0;
+}
+
+#signup .login a {
+    text-decoration: none;
+}
+
+#signup .login button {
+    padding: 7px 40px;
+    width: 350px;
+    border-radius: 3px;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    background-color: rgb(132, 252, 196);
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#login_btn,
+#register_button {
+    padding: 7px 40px;
+    width: 350px;
+    border-radius: 3px;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+    background-color: rgb(132, 252, 196);
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#login_btn:hover {
+    box-shadow: 1px 2px 5px rgba(4, 9, 0, 0.5);
+}
+
+#signup .login p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#signup .reg_login {
+    left: 0;
+}
+
+#signup .toggle {
+    display: none !important;
+    transition: 1s;
+}
+
+#signup .register {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    background-color: #3bf5a4;
+    border-radius: 90px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: 1s;
+}
+
+#signup .register2 {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 50%;
+    right: -100%;
+    align-items: center;
+    text-align: center;
+    height: 550px;
+    justify-content: center;
+    background-color: #3bf5a4;
+    border-radius: 90px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: 0.6s;
+}
+
+#signup .shift1 {
+    left: -100% !important;
+}
+
+#signup .shift2 {
+    right: 0;
+}
+
+#signup .shift3 {
+    display: flex;
+}
+
+#signup .register h2,
+#signup .register2 h2 {
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+#signup .register p {
+    font-size: 20px;
+}
+
+#signup .register button,
+#signup .register2 button {
+    padding: 5px 40px;
+    margin: 9px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+}
+
+@media(max-width: 499px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #signup {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 19px;
+        margin-bottom: 0;
+    }
+
+    #signup .register {
+        width: 100%;
+        top: 0;
+        height: 40%;
+        border-radius: 30px;
+        border-top-right-radius: 19px;
+        border-top-left-radius: 19px;
+        transition: 1s;
+    }
+
+    #signup .register2 {
+        width: 100%;
+        bottom: -100%;
+        height: 40%;
+        border-radius: 30px;
+        border-bottom-right-radius: 19px;
+        border-bottom-left-radius: 19px;
+        transition: 1s;
+    }
+
+    #signup .shift1 {
+        left: 20px;
+        top: -900px !important;
+    }
+
+    #signup .shift2 {
+        right: 0;
+        bottom: 0;
+    }
+
+    #signup .login {
+        width: 80%;
+        right: auto;
+        align-items: center;
+        text-align: center;
+        bottom: 50px;
+        height: 60%;
+        justify-self: center;
+    }
+
+    #signup .reg_login {
+        top: 0;
+        left: auto;
+    }
+
+    #signup .login h2 {
+        margin: 25px 0;
+        font-size: 32px;
+    }
+
+    #signup .login input,
+    #state {
+        width: 88vw;
+        margin: 6px 2px;
+    }
+
+    #login_btn,
+    #register_button {
+        padding: 7px 40px;
+        width: 88vw;
+
+    }
+
+    #signup .login span i {
+        right: 0px;
+        margin-top: 23px;
+    }
+
+
+}

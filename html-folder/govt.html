@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Dashboard</title>
+
+    <!-- Add Leaflet CSS and JS for OpenStreetMap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <link rel="stylesheet" href="/css-folder/govt.css">
+    <link rel="stylesheet" href="/css-folder/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href="/html-folder/govt.html">Smart India Clean India</a>
+            <img src="/images/indialogo.png" alt="logo">
+            <div class="nav-link" id="nav-link">
+                <i class="fa-solid fa-xmark fa-lg" id="nav-cross"></i>
+                <ul>
+                    <li>
+                        <a href="/html-folder/govt.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/html-folder/about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="/html-folder/profile.html">PROFILE</a>
+                    </li>
+                    <li>
+                        <a href="/html-folder/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars fa-lg" id="nav-menu"></i>
+        </nav>
+    </section>
+
+
+
+    <div class="container">
+            <section class="table-section">
+                <h2>Waste Collection Reports</h2>
+                <div id="table-container">
+                    <div class="loading">
+                        Loading data...
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-section">
+                <h2>Location Map</h2>
+                <div id="map"></div>
+            </section>
+
+            <section class="details-section">
+                <h2>Report Details</h2>
+                <div class="image-container">
+                    <p class="no-data">Select a report to view the image</p>
+                </div>
+                <div class="description-container">
+                    <p class="no-data">Select a report to view the description</p>
+                </div>
+            </section>
+
+            <section class="actions-section">
+                <button id="dispatch-btn" class="dispatch-btn" disabled>Dispatch Cleanup Team</button>
+            </section>
+    </div>
+
+    <button id="asdfg">gchvj</button>
+
+   
+    <section class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Smart India Clean India. All rights reserved.</p>
+            <div class="social-icon">
+                <div> <a href="www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-xl"></i></a></div>
+                <div> <a href="www.instsgram.com" target="_blank"> <i class="fa-brands fa-instagram fa-xl"></i></a>
+                </div>
+                <div> <a href="www.twitter.com" target="_blank"> <i class="fa-brands fa-x-twitter fa-xl"></i></a></div>
+                <div> <a href="www.linkedin.com" target="_blank"> <i class="fa-brands fa-linkedin fa-xl"></i></a></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+    <script src="/js-folder/govt.js"></script>
+    <script src="/js-folder/nav.js"></script>
+</body>
+
+</html>

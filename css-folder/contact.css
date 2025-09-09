@@ -1,0 +1,118 @@
+.header{
+    background-image:linear-gradient(rgba(4,9,30,0.5),
+    rgba(4,9,30,0.7)),url(/images/contact.jpg);
+    height: auto; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.final{
+    margin-bottom: 500px;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.contact_box{
+background-color:transparent;
+box-shadow: rgba(0,0,0, 0.1);
+width: 50%;
+margin:auto;
+border-radius: 10px;
+
+}
+.contact_box h1{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:white;
+}
+.contact_box p{
+    color: rgb(214, 214, 214);
+    margin-bottom: 20px;
+    
+}
+form input, form textarea{
+    width: 40%;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #204db9;
+    border-radius: 5px;
+}
+form textarea{
+    height: 100px;
+    resize: none;
+}
+form button {
+    display: block;
+    width: 40%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #f1d02b;
+    color: white;
+    border: none;
+    border-radius: 5px ;
+    font-size: 1em;
+    cursor: pointer;
+}
+button:hover{
+ background-color: #e8c40f;
+}
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.info-box:hover {
+    transform: scale(1.05);
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+#wp:hover {
+    color: #12c733;
+}
+
+#ph:hover {
+    color: #9357e7;
+}
+
+#e:hover {
+    color: #ed7282;
+}

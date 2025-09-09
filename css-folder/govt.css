@@ -1,0 +1,226 @@
+:root {
+    --primary-green: #2E8B57;
+    --light-green: #8FBC8F;
+    --dark-green: #006400;
+    --background-green: #F0FFF0;
+    --accent-green: #3CB371;
+}
+
+.h1line {
+    font-size: 25px;
+    font-weight: bold;
+    width: 49%;
+    padding: 24px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-green);
+    color: #333;
+}
+
+header {
+    background-color: #2E8B57;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 99vw;
+    margin: 30px 0;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "table table"
+            "map details"
+            "actions actions";
+    }
+}
+
+.table-section {
+    display: inline;
+    width: 97vw;
+    grid-area: table;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.map-section {
+    width: 47vw;
+    grid-area: map;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 525px;
+}
+
+.map-section {
+    overflow: hidden;
+    /* Add this to prevent overflow */
+}
+
+.details-section {
+    grid-area: details;
+    width: 47vw;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 27px;
+    margin: 20px 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    justify-self: center;
+}
+
+th {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: var(--background-green);
+    cursor: pointer;
+}
+
+tr.selected {
+    background-color: var(--light-green);
+}
+
+#map {
+    justify-self: center;
+    width: 95%;
+    height: 400px;
+    border-radius: 2px;
+}
+
+.image-container {
+    width: 99%;
+    height: 270px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-self: center;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.description-container {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    height: 150px;
+    width: 99%;
+    align-self: center;
+    border: 1px solid rgb(192, 192, 192);
+}
+
+.actions-section {
+    display: flex;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    margin: 20px 0;
+    width: 100vw;
+}
+
+.dispatch-btn {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 0 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dispatch-btn:hover {
+    background-color: var(--dark-green);
+}
+
+.no-data {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+    padding: 20px;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    /* Align items to the top */
+    justify-content: space-between;
+    /* Space between logos and buttons */
+}
+
+@media(max-width:499px) {
+    .table-section {
+        display: inline;
+        width: 94vw;
+    }
+
+    .map-section {
+        width: 94vw;
+        margin-bottom: 15px;
+    }
+
+    .details-section {
+        width: 94vw;
+
+    }
+    .dispatch-btn {
+    margin: 0 13px;
+
+}
+}

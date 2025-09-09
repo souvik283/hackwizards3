@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="/css-folder/nav.css">
+    <link rel="stylesheet" href="/css-folder/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="signup">
+        <div id="reg_text" class="register ">
+            <h2>Hello, Welcome</h2>
+            <P>Don't have any account?</P>
+            <button id="register_btn">Register</button>
+        </div>
+        <div id="log_text" class="register2">
+            <h2>Hello, Welcome</h2>
+            <P>Already have an account.</P>
+            <button id="register_btn2">Continue With Login</button>
+        </div>
+        <div id="login_form" class="login">
+            <form action="">
+                <h2>Login</h2>
+                <span><input class="input1" type="text" placeholder="Unique Govt. Id" required><i
+                        class="fa-solid fa-user"></i></span>
+                <span><input class="input1" type="password" placeholder="Password" required><i
+                        class="fa-solid fa-lock"></i></span>
+                <a href="">Forgot password?</a>
+                <a id="login_btn">Login</a>
+                <p>Or login using different platfrom</p>
+                <i class="fa-brands fa-google"></i>
+                <h4></h4>
+            </form>
+        </div>
+        <div id="reg_form" class="reg_login toggle login">
+            <form action="">
+                <h2>Register</h2>
+
+                <select id="state" class="input2" name="state">
+                    <option value="">Select State Government:</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+
+
+                <span><input class="input2" type="text" placeholder="Municipality/Panchayat Name"><i
+                        class="fa-solid fa-house-chimney"></i></span>
+                <span><input class="input2" type="email" placeholder="Unique Govt. Id"><i
+                        class="fa-solid fa-user"></i></span>
+                <span><input class="input2" type="text" placeholder="Password"><i
+                        class="fa-solid fa-lock"></i></span>
+                <span><input class="input2" type="password" placeholder="Confirm Password"><i
+                        class="fa-solid fa-lock"></i></span>
+                <a id="register_button">Register</a>
+                <p>Or login using different platfrom</p>
+                <i class="fa-brands fa-google"></i>
+            </form>
+        </div>
+    </section>
+
+    <script src="/js-folder/fetch.js"></script>
+    <script src="https://kit.fontawesome.com/58cd1ba0fe.js" crossorigin="anonymous"></script>
+    <script src="/js-folder/login.js"></script>
+</body>
+
+</html>
