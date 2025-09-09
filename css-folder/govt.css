@@ -22,14 +22,14 @@ body {
     color: #333;
 }
 
-header {
+/* header {
     background-color: #2E8B57;
     color: white;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: auto;
-}
+} */
 
 .container {
     display: flex;
@@ -58,14 +58,54 @@ header {
 }
 
 .table-section {
-    display: inline;
+    display: block; /* inline → block for better mobile handling */
     width: 97vw;
     grid-area: table;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
     margin-bottom: 20px;
+    overflow-x: auto; /* enables horizontal scroll */
+    -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* ensures scroll on smaller screens */
+}
+
+th {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    white-space: nowrap; /* prevents header text wrapping */
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* keeps text in one line */
+}
+
+tr:hover {
+    background-color: var(--background-green);
+    cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .table-section {
+        width: 100vw; /* full width */
+        border-radius: 0; /* cleaner look on phones */
+    }
+}
+
+
+tr.selected {
+    background-color: var(--light-green);
 }
 
 .map-section {
@@ -96,33 +136,6 @@ header {
 h2 {
     font-size: 27px;
     margin: 20px 20px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    justify-self: center;
-}
-
-th {
-    background-color: var(--primary-green);
-    color: white;
-    padding: 12px;
-    text-align: left;
-}
-
-td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-tr:hover {
-    background-color: var(--background-green);
-    cursor: pointer;
-}
-
-tr.selected {
-    background-color: var(--light-green);
 }
 
 #map {
@@ -156,15 +169,17 @@ tr.selected {
     height: 150px;
     width: 99%;
     margin-bottom: 6px;
-    font-size: 18px ;
+    font-size: 18px;
     align-self: center;
     border: 1px solid rgb(192, 192, 192);
 }
-.description-container p{
+
+.description-container p {
     margin-top: 5px;
     margin-left: 5px;
 }
-h3{
+
+h3 {
     margin: 8px 20px;
     font-size: 21px;
 }
@@ -229,8 +244,9 @@ h3{
         width: 94vw;
 
     }
-    .dispatch-btn {
-    margin: 0 13px;
 
-}
+    .dispatch-btn {
+        margin: 0 13px;
+
+    }
 }
