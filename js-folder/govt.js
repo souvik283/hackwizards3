@@ -109,7 +109,7 @@ function renderTable(wasteReports) {
                     <tr data-id="${report.id}" class="${report.id === selectedReportId ? 'selected' : ''}">
                         <td>${report.id}</td>
                         <td>${report.date}</td>
-                        <td>lat: ${report.lat}, lon: ${report.lon}</td>
+                        <td> ${report.lat}, ${report.lon}</td>
                         <td>${report.description}</td>
                     </tr>
                 `;
